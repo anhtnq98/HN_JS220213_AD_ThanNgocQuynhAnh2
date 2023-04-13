@@ -1,0 +1,115 @@
+.App {
+  text-align: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: lightgray;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #33373a;
+  min-height: 40vh;
+
+  box-shadow: rgb(99, 96, 96) 0px 1px 1px 0px inset,
+    rgb(49, 48, 48) 0px 50px 80px 10px, black 0px 30px 60px -30px;
+}
+
+header img {
+  margin: 1.2em;
+  width: 250px;
+}
+
+.title-container {
+  margin-bottom: 1.5em;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.3em;
+}
+
+p {
+  margin: 0.5em;
+  font-size: 1.3em;
+}
+
+.to-spend {
+  background-color: rgba(237, 41, 41, 0.911);
+  display: flex;
+  justify-content: center;
+  color: white;
+  top: 0;
+  position: sticky;
+  flex-wrap: wrap;
+  text-align: center;
+  font-size: small;
+}
+
+.all-app-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product {
+  width: 200px;
+  height: 220px;
+  overflow: hidden;
+  margin: 3rem;
+  text-align: center;
+  border-radius: 3px;
+  background-color: white;
+}
+
+.product img {
+  margin: 10px 0 10px 0;
+  width: 180px;
+  height: 130px;
+}
+
+.name-price {
+  display: flex;
+  justify-content: space-between;
+  /* padding: 5px 10px 5px 10px; */
+  padding: 10px;
+  font-size: small;
+  font-weight: bold;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  font-size: x-small;
+}
+
+.interest {
+  border: 1px rgba(217, 3, 3, 0.495) solid;
+  border-radius: 10px 0 0 10px;
+  width: 85px;
+  color: rgba(217, 3, 3, 0.317);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.add {
+  background-color: rgb(217, 3, 3);
+  color: white;
+  border-radius: 0 10px 10px 0px;
+  width: 55px;
+  cursor: pointer;
+}
+
+.quantity {
+  width: 25px;
+}
