@@ -190,41 +190,44 @@ function Product() {
   };
 
   return (
-    <div>
-      {products.map((props) => (
-        <div className="product">
-          <img src={props.image} alt="Ảnh khá lỗi" />
-          <div className="name-price">
-            <div>{props.title}</div>
-            <div>${props.price}</div>
-          </div>
-          <div className="button-container">
-            <div
-              onClick={() => handleQuantity(props.id, "interest")}
-              className="interest"
-            >
-              <p>Interest</p>
+    <>
+      <div class="to-spend">
+        <p>
+          To Spend <strong>$128,000,000,000</strong>
+        </p>
+        <p>You have a lot of money</p>
+      </div>
+      <div>
+        <div className="all-app-container">
+          {products.map((props) => (
+            <div className="product">
+              <img src={props.image} alt="Ảnh khá lỗi" />
+              <div className="name-price">
+                <div>{props.title}</div>
+                <div>${props.price}</div>
+              </div>
+              <div className="button-container">
+                <div
+                  onClick={() => handleQuantity(props.id, "interest")}
+                  className="interest"
+                >
+                  <p>Interest</p>
+                </div>
+                <div>
+                  <p className="quantity">{props.count}</p>
+                </div>
+                <div
+                  onClick={() => handleQuantity(props.id, "add")}
+                  className="add"
+                >
+                  <p>Add</p>
+                </div>
+              </div>
             </div>
-            <div>
-              <p className="quantity">{props.count}</p>
-            </div>
-            <div
-              onClick={() => handleQuantity(props.id, "add")}
-              className="add"
-            >
-              <p>Add</p>
-            </div>
-          </div>
+          ))}
         </div>
-      ))}
-      {/* <div>
-        {listCart.map((cart, id) => (
-          <>
-            <div>{cart.cartProduct}</div>
-          </>
-        ))}
-      </div> */}
-    </div>
+      </div>
+    </>
   );
 }
 
